@@ -1,1 +1,0 @@
-C:\Fontosak\github_repo\examples\example_win32_directx9\Debug\example_win32_directx9.exe
