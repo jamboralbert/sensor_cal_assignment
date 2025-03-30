@@ -1,0 +1,1 @@
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\Release\example_glfw_opengl3.exe
