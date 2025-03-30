@@ -1,23 +1,20 @@
 ﻿  main.cpp
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x25f that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x268 that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x26b that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x386 that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x38d that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x4cb that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x5d1 that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x727 that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x72a that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x77a that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x896 that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x899 that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x89d that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0xc81 that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0xc84 that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0xc88 that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x108d that is illegal in the current source character set (codepage 65001).
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(93,86): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(96,86): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(99,86): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(115,85): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x330 that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x337 that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x475 that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x57b that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x6d1 that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x6d4 that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x724 that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x840 that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x843 that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x847 that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0xc2b that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0xc2e that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0xc32 that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(1,1): warning C4828: The file contains a character starting at offset 0x1037 that is illegal in the current source character set (codepage 65001).
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(95,86): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(98,86): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(101,86): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Fontosak\github_repo\examples\example_glfw_opengl3\main.cpp(117,85): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   example_glfw_opengl3.vcxproj -> C:\Fontosak\github_repo\examples\example_glfw_opengl3\Debug\example_glfw_opengl3.exe

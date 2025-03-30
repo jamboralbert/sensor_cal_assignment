@@ -24,9 +24,11 @@ int main(int, char**)
     IMUProcessor imuprocessor;
     DBWProcessor dbwprocessor;
 
-    // Beolvasás (relatív útvonal)
-    imuprocessor.parseIMUFile("C:\\Fontosak\\github_repo\\data\\imu.csv");
-    dbwprocessor.parseDBWFile("C:\\Fontosak\\github_repo\\data\\dbw.csv");
+
+    imuprocessor.parseIMUFile("data/imu.csv");
+    dbwprocessor.parseDBWFile("data/dbw.csv");
+
+
 
     glfwSetErrorCallback(glfw_error_callback);
     if (!glfwInit())
