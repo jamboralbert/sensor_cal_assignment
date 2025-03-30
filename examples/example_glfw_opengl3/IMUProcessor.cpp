@@ -73,12 +73,11 @@ std::vector<NormalizedIMUData> IMUProcessor::normalizeIMUData() const {
     double startTime = imuData.front().timestamp;
 
     for (const auto& imu : imuData) {
-        float normTimestamp = static_cast<float>(imu.timestamp - startTime);
+        float normTimestamp = std::round(static_cast<float>(imu.timestamp - startTime) * 10000.0f) / 10000.0f;
 
-        normTimestamp = std::round(normTimestamp * 10000.0) / 10000.0;
-        float accX = std::round(imu.acc_x * 10000.0) / 10000.0;
-        float accY = std::round(imu.acc_y * 10000.0) / 10000.0;
-        float accZ = std::round(imu.acc_z * 10000.0) / 10000.0;
+        float accX = std::round(imu.acc_x * 10000.0f) / 10000.0f;
+        float accY = std::round(imu.acc_y * 10000.0f) / 10000.0f;
+        float accZ = std::round(imu.acc_z * 10000.0f) / 10000.0f;
 
         normalizedData.push_back({ normTimestamp, accX, accY, accZ });
     }
