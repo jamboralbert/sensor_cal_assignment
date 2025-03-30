@@ -30,7 +30,7 @@ bool IMUProcessor::parseIMUFile(const string& filename) {
 bool IMUProcessor::cleanIMULine(const string& line, IMUData& imu) {
     stringstream ss(line);
     string temp;
-    const float accuracyThreshold = 0.5; // Példa küszöbérték
+    const float accuracyThreshold = 0.5;
 
     // Parse timestamp
     getline(ss, temp, ',');
@@ -73,9 +73,8 @@ std::vector<NormalizedIMUData> IMUProcessor::normalizeIMUData() const {
     double startTime = imuData.front().timestamp;
 
     for (const auto& imu : imuData) {
-        double normTimestamp = imu.timestamp - startTime;
+        float normTimestamp = static_cast<float>(imu.timestamp - startTime);
 
-        // Kerekítés 4 tizedesjegyre
         normTimestamp = std::round(normTimestamp * 10000.0) / 10000.0;
         float accX = std::round(imu.acc_x * 10000.0) / 10000.0;
         float accY = std::round(imu.acc_y * 10000.0) / 10000.0;

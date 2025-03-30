@@ -13,7 +13,7 @@ struct DBWData {
 };
 
 struct NormalizedDBWData {
-    double timestamp;
+    float timestamp;
     float speed;
 };
 

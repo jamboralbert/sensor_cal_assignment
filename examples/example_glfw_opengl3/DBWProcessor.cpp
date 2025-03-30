@@ -66,9 +66,8 @@ vector<NormalizedDBWData> DBWProcessor::normalizeDBWData() const {
     double startTime = dbwData.front().timestamp;
 
     for (const auto& dbw : dbwData) {
-        double normTimestamp = dbw.timestamp - startTime;
+        float normTimestamp = static_cast<float>(dbw.timestamp - startTime);
 
-        // Kerekítés 4 tizedesjegyre
         normTimestamp = round(normTimestamp * 10000.0) / 10000.0;
         float normSpeed = round(dbw.speed * 10000.0) / 10000.0;
 

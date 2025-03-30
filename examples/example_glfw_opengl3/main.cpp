@@ -34,25 +34,23 @@ int main(int, char**)
     if (!glfwInit())
         return 1;
 
-    // OpenGL 3.0+ context létrehozása
     const char* glsl_version = "#version 130";
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 #if __APPLE__
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // macOS kompatibilitás
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
 
 
 
-    GLFWwindow* window = glfwCreateWindow(1280, 720, "IMU Data Visualization", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(1280, 720, "IMU/DBW Data Visualization", nullptr, nullptr);
     if (window == nullptr)
         return 1;
 
     glfwMakeContextCurrent(window);
     glfwSwapInterval(1); // vsync
 
-    // ImGui inicializálás
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImPlot::CreateContext();
@@ -65,10 +63,8 @@ int main(int, char**)
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init(glsl_version);
 
-    // Ablak beállítások
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
-    // Fõ ciklus
     while (!glfwWindowShouldClose(window))
     {
         glfwPollEvents();
@@ -77,9 +73,8 @@ int main(int, char**)
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        ImGui::Begin("Timestamp and acceleration Visualization");
+        ImGui::Begin("Speed and Acceleration Trends");
 
-        // IMU adat ábrázolása
         std::vector<NormalizedIMUData> imuData = imuprocessor.normalizeIMUData();
         std::vector<float> timestamps, accX, accY, accZ;
 
@@ -92,18 +87,17 @@ int main(int, char**)
 
         if (ImPlot::BeginPlot("Acceleration vs Time")) {
             ImPlot::SetNextLineStyle(ImVec4(1, 0, 0, 1), 2.0f);
-            ImPlot::PlotLine("acc_x", timestamps.data(), accX.data(), timestamps.size());
+            ImPlot::PlotLine("acc_x", timestamps.data(), accX.data(), static_cast<int>(timestamps.size()));
 
             ImPlot::SetNextLineStyle(ImVec4(0, 1, 0, 1), 2.0f);
-            ImPlot::PlotLine("acc_y", timestamps.data(), accY.data(), timestamps.size());
+            ImPlot::PlotLine("acc_y", timestamps.data(), accY.data(), static_cast<int>(timestamps.size()));
 
             ImPlot::SetNextLineStyle(ImVec4(0, 0, 1, 1), 2.0f);
-            ImPlot::PlotLine("acc_z", timestamps.data(), accZ.data(), timestamps.size());
+            ImPlot::PlotLine("acc_z", timestamps.data(), accZ.data(), static_cast<int>(timestamps.size()));
 
             ImPlot::EndPlot();
         }
 
-        // DBW adat ábrázolása
         std::vector<NormalizedDBWData> dbwData = dbwprocessor.normalizeDBWData();
         std::vector<float> dbwTimestamps, speed;
 
@@ -114,7 +108,7 @@ int main(int, char**)
 
         if (ImPlot::BeginPlot("Speed vs Time")) {
             ImPlot::SetNextLineStyle(ImVec4(1, 1, 0, 1), 2.0f);
-            ImPlot::PlotLine("Speed", dbwTimestamps.data(), speed.data(), speed.size());
+            ImPlot::PlotLine("Speed", dbwTimestamps.data(), speed.data(), static_cast<int>(speed.size()));
 
             ImPlot::EndPlot();
         }
@@ -133,7 +127,6 @@ int main(int, char**)
         glfwSwapBuffers(window);
     }
 
-    // Takarítás
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
     ImPlot::DestroyContext();

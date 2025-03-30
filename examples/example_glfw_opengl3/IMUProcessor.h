@@ -16,7 +16,7 @@ struct IMUData {
 };
 
 struct NormalizedIMUData {
-    double timestamp;
+    float timestamp;
     float acc_x, acc_y, acc_z;
 };
 
