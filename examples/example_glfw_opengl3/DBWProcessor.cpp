@@ -67,9 +67,10 @@ vector<NormalizedDBWData> DBWProcessor::normalizeDBWData() const {
 
     for (const auto& dbw : dbwData) {
         float normTimestamp = static_cast<float>(dbw.timestamp - startTime);
+        float normSpeed;
 
-        normTimestamp = round(normTimestamp * 10000.0) / 10000.0;
-        float normSpeed = round(dbw.speed * 10000.0) / 10000.0;
+        normTimestamp = round(normTimestamp * 10000.0f) / 10000.0f;
+        normSpeed = round(dbw.speed * 10000.0f) / 10000.0f;
 
         normalizedData.push_back({ normTimestamp, normSpeed });
     }
