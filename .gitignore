@@ -1,0 +1,16 @@
+# Visual Studio mappak es fajlok
+.vs/
+*.vs/
+.vscode/
+.idea/
+
+# Build fajlok
+bin/
+obj/
+
+# Mas ideiglenes fajlok
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.swp
